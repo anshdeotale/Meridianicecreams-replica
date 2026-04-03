@@ -8,8 +8,11 @@
 .mainParent{
     height: 1000px;
     width: 100%;
-    background-color: rgb(238, 141, 131);
+    /* background-color: rgb(238, 141, 131); */
 }
+    
+
+      /* navbar section */
 
 .navbar{
     height: 100px;
@@ -18,14 +21,14 @@
     display: flex;
     justify-content: space-between;
     position: fixed; 
+    /* z-index: 1; */
 }
 .navbar .child{
     height: 100px;
     width: 200px;
     display: flex;
     align-items: center;
-
-
+    
 }
 .navbar .first{
     justify-content: center;
@@ -36,16 +39,19 @@
     color: white;
 }
 
-.navbar .third{
-    color: white;
+.navbar .second{
+    width: 280px;
 }
 
+
 .navbar .third i{
+    justify-content: left;
     font-size: 30px;
     padding:  10px;
     margin-left: 20px;
     justify-content: left;
     border-radius: 50%;
+    color: white;
 }
 
 .navbar .third i:hover{
@@ -53,6 +59,8 @@
     transition: 0.7s;
     background-color: gainsboro;
 }
+
+           /* home section */
 
 .home{
     height: 400px;
@@ -63,19 +71,147 @@
 }
 
 .home .homeContent{
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 300px;
-    width: 400px;
+    width: 550px;
     position: absolute;
-    top: 50px;
+    top: 120px;
+    left: 150px;
     z-index: 1;
 
 }
 
 .home .homeImage img{
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     /* z-index: -1; */
 
+}
+
+.homeContent h1 {
+    font-size: 55px;
+    font-weight: 100;
+}
+
+.homeContent h1 span {
+    font-weight: 800;
+}
+
+.homeContent p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.homeContent button{
+    background-color: #534535;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.homeContent button:hover {
+    background-color: white;
+    border: 1px solid crimson;
+    color: crimson;
+}
+
+
+      /* cards section */
+
+.result{
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+    /* background-color: yellow; */
+    position: relative;
+    top: 122px;
+}
+
+.result .heading {
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    /* background-color: rgb(238, 187, 196); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result .cards{
+    height: 300px;
+    width: 100%;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.result .cards .card{
+    height: 200px;
+    width: 230px;
+    background-color: rgb(246, 200, 208);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 3px gainsboro;
+}
+
+.result .cards .card i{
+    font-size: 60px;
+    color: crimson;
+}
+
+.result .cards .card p{
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 1px;
+    color: crimson;
+}
+
+      /* menu slid section */
+
+.RichSection{
+    height: 600px;
+    width: 100%;
+    background-color: salmon;
+    position: relative;
+    top: 160px;
+}
+
+.RichSection h1{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.RichSection .cards{
+    height: 400px;
+    width: 95%;
+    background-color: yellow;
+    position: relative;
+    top: 50px;
+    left: 2.5%;
+    padding: 10px;
+    display: flex;
+}
+
+.RichSection .cards .card{
+    height: 360px;
+    width: 280px;
+    border: solid;
+}
+
+.RichSection .cards .card img{
+    height: 300px;
+    width: inherit;
 }
