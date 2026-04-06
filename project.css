@@ -354,3 +354,80 @@
     border: 1px solid crimson;
     color: crimson;
 }
+
+
+     /* Servicec secction */
+
+
+.services{
+        margin-top: 100px;
+        min-height: 600px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+.services .subparent{
+  min-height: 500px;
+ width: 85%;
+ padding: 20px;
+ display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+ gap: 20px; 
+ }
+
+     .services .card{
+        min-width: 400px;
+        width: 300px;
+        background-color: crimson;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+     }
+
+.services .card img{
+    height: inherit;
+    width: inherit;
+    margin-left: -20px;
+}
+
+
+     /* footer section */
+
+
+.footer{
+    min-height: 400px;
+    width: 100%;
+    background-color: crimson;  
+    padding-top: 80px;
+}
+
+.footer .curv{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 50% 50%;
+    /* display: flex;
+    align-items:flex-start;
+    justify-content: space-around; */
+    
+    
+   
+}
+
+.footer .curv{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* top align */
+    padding: 40px;
+    height: auto; /* IMPORTANT */
+    background-color: crimson; /* match footer */
+    border-radius: 0;
+}
+
+.footer .curv  img{
+    height: 200px;
+    width: 300px;   
+}
